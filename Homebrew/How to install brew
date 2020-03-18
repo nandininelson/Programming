@@ -1,0 +1,63 @@
+If you do not have brew installed just head to https://brew.sh/
+Rest is self explantory on the website page.
+
+But still if you insist
+
+What is Homebrew?
+It is a package manager for MacOS(& Linux).
+If you dont have a software, just brew it!
+It is based on git and ruby.
+It insalls all the packages in its own folder and just creates symlinks in /usr/local
+
+How to install brew?
+(As mentioned on the website) 
+Just execute the below on your terminal.
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+How to use it?
+Just type 
+brew install <software>
+
+eg:
+brew install git
+brew install wget
+brew install maven
+brew install gradle
+
+Good to know Commands : 
+
+- To know all the commands run the below on your terminal.
+brew commands
+
+- Let the package speak for itself.
+Type brew in terminal and hit enter. You will have the list and usage.
+bash-3.2$ brew
+Example usage:
+  brew search [TEXT|/REGEX/]
+  brew info [FORMULA...]
+  brew install FORMULA...
+  brew update
+  
+  brew upgrade [FORMULA...]
+  brew uninstall FORMULA...
+  brew list [FORMULA...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install --verbose --debug FORMULA
+
+Contributing:
+  brew create [URL [--no-fetch]]
+  brew edit [FORMULA...]
+
+Further help:
+  brew commands
+  brew help [COMMAND]
+  man brew
+  https://docs.brew.sh
+bash-3.2$ 
+
+Uninstallation 
+Although the article topic says how to install brew, but for some reason (space?) if you do wish to uninstall brew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
